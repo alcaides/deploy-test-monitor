@@ -41,7 +41,7 @@ nosetests [<package_name>]
 ```
 
 Stress test.
-- Instalar Locust. Correr con locust el locustfile.py. El shell informa el puerto del localhost desde el que se accede a la interfaz web. Loguearse con admin/admin.
+- Instalar Locust. Correr con locust el locustfile.py. El shell informa el puerto del localhost desde el que se accede a la interfaz web. Loguearse con admin/admin. Indicar dirección donde está corriendo el servicio: http://localhost:80
 
 ```
 pip install locust
@@ -60,8 +60,11 @@ Para el monitoreo del rendimiento del servicio, se utilizan Graylog y Grafana pa
 docker-compose -f docker-compose.yml.monitor up -d
 ```
 
--Acceder a Graylog: se accede a la interfaz web a través del puerto 9000. Para monitorear los mensajes es necesario declarar un input UDP GELF desde el menú de herramientas. Los resultados del análsis de sentimiento estan parseados en JSON, por lo que pueden aplicarse filtros al sentimiento y su score. Login: admin/admin
--Acceder a Grafana: se accede a la interfaz web a través del puerto 3000. Desde el menú de creación de dashboards se pueden configurar paneles de monitoreo con sus alarmas. Login: admin/admin.
+-Acceder a Graylog: se accede a la interfaz web a través del puerto 9000. Para monitorear los mensajes es necesario declarar un input UDP GELF desde el menú de herramientas. Los resultados del análsis de sentimiento estan parseados en JSON, por lo que pueden aplicarse filtros al sentimiento y su score. Para hacerlo, primero hay que crear un extractor JSON. Login: admin/admin   
 
-![Arquitectura](/assets/screen_grafana.png?raw=true)
+![Graylog](/assets/screen_graylog.png?raw=true)
+
+-Acceder a Grafana: se accede a la interfaz web a través del puerto 3000. Hay que conectar con la base de datos Elasticsearch. Desde el menú de creación de dashboards se pueden configurar paneles de monitoreo con sus alarmas. Login: admin/admin.
+
+![Grafana](/assets/screen_grafana.png?raw=true)
 
