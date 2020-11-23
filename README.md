@@ -47,11 +47,12 @@ Stress test.
 pip install locust
 locust -f stress_test/locustfile.py
 ```
-Asset 3: charts de locust
+![Locust Charts](/assets/screen_locust.png?raw=true)
 
 ## Sistema de monitoreo
 Para el monitoreo del rendimiento del servicio, se utilizan Graylog y Grafana para hacer uso de sus herramientas de filtrado de requests, dashboards, alertas y demás; con mongodb y elasticsearch como bases de datos para autenticación y logging.
-Asset 2: arquitectura de monitoreo
+
+![Arquitectura de Monitoreo](/assets/monitor_arch.png?raw=true)
 
 -Instalar y ejecutar. 
 
@@ -62,5 +63,5 @@ docker-compose -f docker-compose.yml.monitor up -d
 -Acceder a Graylog: se accede a la interfaz web a través del puerto 9000. Para monitorear los mensajes es necesario declarar un input UDP GELF desde el menú de herramientas. Los resultados del análsis de sentimiento estan parseados en JSON, por lo que pueden aplicarse filtros al sentimiento y su score. Login: admin/admin
 -Acceder a Grafana: se accede a la interfaz web a través del puerto 3000. Desde el menú de creación de dashboards se pueden configurar paneles de monitoreo con sus alarmas. Login: admin/admin.
 
-Asset 4: dashboard grafana
+![Arquitectura](/assets/screen_grafana.png?raw=true)
 
