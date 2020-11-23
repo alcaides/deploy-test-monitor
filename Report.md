@@ -18,7 +18,7 @@ Se procedió a escalar el módulo ML con 2 y 4 workers, pero en ambos casos la e
   
  
 ![Locust Users](/assets/locust_users.png?raw=true)  
-![Locust Response](/assets/locust_response.png?raw=true)  
+![Locust Response Time](/assets/locust_response_times.png?raw=true)  
 ![Locust Request per Second](/assets/locust_rps.png?raw=true)  
   
     
