@@ -10,7 +10,7 @@ En este repositorio se incluye material para:
 ## Sisema predictivo
 El sistema predictivo está compuesto por una API que recibe como requests textos para ser analizados. Se comunica con un módulo de Machine Learning a través de una cola de mensajes implementada con Redis. Se orquestan los contenedores con docker-compose.
 
-!(/deploy-test-monitor/master/assets/sentiment_arch.png)
+!(/deploy-test-monitor/master/assets/sentiment_arch.png?raw=true)
 
 Instalar y ejecutar. Se accede a la interfaz web a través del puerto 80.
 ```
