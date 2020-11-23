@@ -1,11 +1,12 @@
 # Despliegue de sistemas predictivos
-> Diplodatos 2019-2020
+> Diplodatos 2019-2020  
+
 En este repositorio se incluye material para:  
 -Desplegar un servicio de análisis de sentimiento en contenedores Docker: API, redis, Módulo de Machine Learning.   
 -Desplegar de servicio de monitoreo: Graylog, grafana, elasticsearch, mongodb.  
 -Realizar tests funcionales, unitarios y de integración.  
 -Realizar stress test con Locust  
-
+Fuente: https://github.com/matisilva/ml-api-public
 
 ## Sisema predictivo
 El sistema predictivo está compuesto por una API que recibe como requests textos para ser analizados. Se comunica con un módulo de Machine Learning a través de una cola de mensajes implementada con Redis. Se orquestan los contenedores con docker-compose.
